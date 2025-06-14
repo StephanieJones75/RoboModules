@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+    <style>
+body {
+    background-color: lightblue;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #04AA6D;
+  color: purple;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+    
+</head>
+
+<body>
+    <ul>
+        <li><a href="Tasks.html">Task List</a></li>
+    </ul>
+    
+    <p><strong>Fill the form below to create a new task.</strong></p>
+
+        <form action="/action_page.php">
+            
+                <label>Task Title</label>
+                <input type="text" id="task" name="task title">            
+                        
+                <label>Task Description</label>
+                <textarea id="task description" name="task description" style="height:200px"></textarea>
+                       
+                <label>Category</label>
+                <input type="text" id="category" name="category">
+                       
+                <label>Priority Level</label>
+                <select name = "priority level" id="priority level" placeholder="Select an Item">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                        
+                <label>Progress Level</label>
+                <select name = "progress level" id="progress level" placeholder="Select an Item">
+                    <option value="not started">Not Started</option>
+                    <option value="pending approval">Pending Approval</option>
+                    <option value="in progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+</body>
+
+</html>
